@@ -1,96 +1,101 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>プライバシーポリシー | Oshi-Schedule AI</title>
-<style>
-  :root {
-    --bg: #f7f7fa; --card: #ffffff; --ink: #2b2b33; --sub: #6b6b76;
-    --accent: #8b7cf6; --border: #e6e6ee;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #101014; --card: #1a1a20; --ink: #ececf1; --sub: #9a9aa5; --border: #2a2a33; }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
-    line-height: 1.85; font-size: 15px;
-  }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
-  .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px 24px; }
-  h1 { font-size: 22px; margin: 0 0 4px; }
-  .updated { color: var(--sub); font-size: 13px; margin-bottom: 24px; }
-  h2 { font-size: 17px; margin: 32px 0 8px; padding-top: 8px; border-top: 1px solid var(--border); }
-  h2:first-of-type { border-top: none; margin-top: 16px; }
-  p, li { color: var(--ink); }
-  ul { padding-left: 20px; }
-  .sub { color: var(--sub); font-size: 13px; }
-  a { color: var(--accent); }
-  .app { font-weight: 700; }
-</style>
-</head>
-<body>
-<div class="wrap">
-  <div class="card">
-    <h1>プライバシーポリシー</h1>
-    <div class="updated">最終更新日: 2026年7月4日</div>
-
-    <p>本ポリシーは、iOSアプリ<span class="app">「Oshi-Schedule AI」</span>（以下「本アプリ」）における利用者情報の取り扱いを定めるものです。本アプリの開発者（以下「当方」）は、利用者のプライバシーを尊重し、以下のとおり情報を取り扱います。</p>
-
-    <h2>1. 収集・保存する情報の基本方針</h2>
-    <p>利用者が登録したイベント・タスク・公演・持ち物・メモなどの予定情報は、原則としてお使いの端末内にのみ保存されます。当方がこれらの予定情報を収集・閲覧することはありません。</p>
-
-    <h2>2. AI解析における画像の送信</h2>
-    <p>スクリーンショットからの自動登録（AI解析）機能を利用する場合、利用者が選択した画像は、イベント情報（イベント名・日付・会場・タスク等）を抽出する目的で、当方の中継サーバー（Cloudflare Workers）を経由して Google の Gemini API に送信されます。</p>
-    <ul>
-      <li>送信された画像は解析のためだけに使用され、当方の中継サーバー上に保存されません。</li>
-      <li>Google におけるデータの取り扱いは <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a>に従います。</li>
-      <li>本機能以外の目的で画像が送信されることはありません。</li>
-    </ul>
-
-    <h2>3. AI解析への同意と撤回</h2>
-    <p>AI解析を初めて利用する前に、画像送信に関する専用の確認画面で同意を求めます。同意しない場合でも、手動入力により本アプリの基本機能はすべてご利用いただけます。同意はアプリ内の「設定 &gt; AI解析」からいつでも撤回できます。</p>
-
-    <h2>4. 端末識別子</h2>
-    <p>AI解析の利用回数管理と不正利用防止のため、端末ごとに生成した匿名の識別子（UUID）を当方の中継サーバーに送信します。この識別子は本アプリが独自に生成するもので、氏名・メールアドレス・電話番号等の個人情報とは一切紐付きません。</p>
-
-    <h2>5. 利用状況データ（分析）</h2>
-    <p>本アプリの改善のため、分析サービス PostHog を利用して、機能の利用状況（例: AI解析の実行、画面の表示、購入手続きの開始など）を匿名で収集します。</p>
-    <ul>
-      <li>収集されるのは操作イベントと端末の一般的な情報（OSバージョン等）のみで、予定の内容やスクリーンショット画像は含まれません。</li>
-      <li>これらのデータは個人を特定せず、他社のアプリやWebサイトを横断した追跡（トラッキング）にも使用しません。</li>
-      <li>PostHog におけるデータの取り扱いは <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog のプライバシーポリシー</a>に従います。</li>
-    </ul>
-
-    <h2>6. 課金情報</h2>
-    <p>プレミアム（サブスクリプション）の購入・管理は Apple の App Store および課金基盤 RevenueCat を通じて行われます。クレジットカード番号等の決済情報を当方が直接取得・保持することはありません。購入状態の管理のため、RevenueCat が匿名の識別子を用います（<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat のプライバシーポリシー</a>）。</p>
-
-    <h2>7. アフィリエイトリンク・外部サービス</h2>
-    <p>本アプリには、持ち物や宿泊の検索を補助する目的で、Amazon および楽天トラベルへのリンクが含まれます（「PR」表記のあるものはアフィリエイトリンクです）。</p>
-    <ul>
-      <li>これらのリンクは端末の外部ブラウザ（または各公式アプリ）で開かれ、リンク先での閲覧・購入行動は各サービスのプライバシーポリシーに従います。</li>
-      <li>リンクを開いたことにより、当方が利用者の購入内容や個人情報を取得することはありません。</li>
-    </ul>
-
-    <h2>8. 広告</h2>
-    <p>現在、本アプリは第三者の広告配信SDKを使用していません。将来導入する場合は、本ポリシーを改定のうえ、必要な場合には App Tracking Transparency により事前に許可を求めます。</p>
-
-    <h2>9. 通知</h2>
-    <p>リマインド通知は、利用者の許可に基づき端末上でスケジュールされます（ローカル通知）。通知の内容が外部サーバーに送信されることはありません。通知は iOS の設定からいつでもオフにできます。</p>
-
-    <h2>10. データの管理・削除</h2>
-    <p>予定データは端末内に保存され、アプリ内の設定画面からJSONファイルとして書き出し・読み込みができます。アプリを削除すると、端末内の予定データは削除されます。中継サーバー上の利用回数カウンタ（匿名UUIDに紐づくもの）は一定期間経過後に自動的に消去されます。</p>
-
-    <h2>11. 本ポリシーの改定</h2>
-    <p>機能追加等により取り扱いが変わる場合、本ページを更新し、最終更新日を改めます。重要な変更がある場合はアプリ内でお知らせします。</p>
-
-    <h2>12. お問い合わせ</h2>
-    <p>本ポリシーおよび本アプリに関するお問い合わせは、<a href="https://docs.google.com/forms/d/e/1FAIpQLSf34rsmfMLIVRShFLuhtSoCnUxcrkY1v9LNycJ1CnxykTM5YA/viewform?usp=dialog" target="_blank" rel="noopener">お問い合わせフォーム</a>よりお願いいたします。</p>
-
-    <p class="sub">Oshi-Schedule AI 開発者</p>
-  </div>
-</div>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー | 推し活アラート（Oshi-Schedule AI）</title>
+  <style>
+      :root {
+            --bg: #f7f7fa; --card: #ffffff; --ink: #2b2b33; --sub: #6b6b76;
+            --accent: #8b7cf6; --border: #e6e6ee;
+      }
+      @media (prefers-color-scheme: dark) {
+            :root { --bg: #101014; --card: #1a1a20; --ink: #ececf1; --sub: #9a9aa5; --border: #2a2a33; }
+      }
+      * { box-sizing: border-box; }
+      body {
+            margin: 0; background: var(--bg); color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+            line-height: 1.85; font-size: 15px;
+      }
+      .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+      .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px 24px; }
+      h1 { font-size: 22px; margin: 0 0 4px; }
+      .updated { color: var(--sub); font-size: 13px; margin-bottom: 24px; }
+      h2 { font-size: 17px; margin: 32px 0 8px; padding-top: 8px; border-top: 1px solid var(--border); }
+      h2:first-of-type { border-top: none; margin-top: 16px; }
+      p, li { color: var(--ink); }
+      ul { padding-left: 20px; }
+      .sub { color: var(--sub); font-size: 13px; }
+      a { color: var(--accent); }
+      .app { font-weight: 700; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+        <div class="card">
+              <h1>プライバシーポリシー</h1>
+            <div class="updated">最終更新日: 2026年7月10日</div>div>
+        
+            <p>本ポリシーは、iOSアプリ<span class="app">「推し活アラート」（Oshi-Schedule AI）</span>span>（以下「本アプリ」）における利用者情報の取り扱いを定めるものです。本アプリの開発者（以下「当方」）は、利用者のプライバシーを尊重し、以下のとおり情報を取り扱います。</p>
+        
+            <h2>1. 収集・保存する情報の基本方針</h2>
+            <p>利用者が登録したイベント・タスク・公演・持ち物・メモなどの予定情報は、原則としてお使いの端末内にのみ保存されます。当方がこれらの予定情報を収集・閲覧することはありません。</p>
+        
+            <h2>2. AI解析における画像の送信</h2>
+            <p>スクリーンショットからの自動登録（AI解析）機能を利用する場合、利用者が選択した画像は、イベント情報（イベント名・日付・会場・タスク等）を抽出する目的で、当方の中継サーバー（Cloudflare Workers）を経由して Google の Gemini API に送信されます。</p>
+            <ul>
+                    <li>送信された画像は解析のためだけに使用され、当方の中継サーバー上に保存されません。</li>
+                  <li>Google におけるデータの取り扱いは <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a>a>に従います。</li>
+                  <li>本機能以外の目的で画像が送信されることはありません。</li>
+            </ul>
+        
+            <h2>3. AI解析への同意と撤回</h2>
+            <p>AI解析を初めて利用する前に、画像送信に関する専用の確認画面で同意を求めます。同意しない場合でも、手動入力により本アプリの基本機能はすべてご利用いただけます。同意はアプリ内の「設定 &gt; AI解析」からいつでも撤回できます。</p>
+        
+            <h2>4. 端末識別子</h2>
+            <p>AI解析の利用回数管理と不正利用防止のため、端末ごとに生成した匿名の識別子（UUID）を当方の中継サーバーに送信します。この識別子は本アプリが独自に生成するもので、氏名・メールアドレス・電話番号等の個人情報とは一切紐付きません。</p>
+        
+            <h2>5. 利用状況データ（分析）</h2>
+            <p>本アプリの改善のため、分析サービス PostHog を利用して、機能の利用状況（例: AI解析の実行、画面の表示、購入手続きの開始など）を匿名で収集します。</p>
+            <ul>
+                  <li>収集されるのは操作イベントと端末の一般的な情報（OSバージョン等）のみで、予定の内容やスクリーンショット画像は含まれません。</li>
+                  <li>これらのデータは個人を特定せず、他社のアプリやWebサイトを横断した追跡（トラッキング）にも使用しません。</li>
+                  <li>PostHog におけるデータの取り扱いは <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog のプライバシーポリシー</a>a>に従います。</li>
+            </ul>
+        
+            <h2>6. 課金情報</h2>
+            <p>プレミアム（サブスクリプション）の購入・管理は Apple の App Store および課金基盤 RevenueCat を通じて行われます。クレジットカード番号等の決済情報を当方が直接取得・保持することはありません。購入状態の管理のため、RevenueCat が匿名の識別子を用います（<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat のプライバシーポリシー</a>a>）。また、プレミアム特典（AI解析の回数制限解除）を適用する際、この匿名の識別子が当方の中継サーバーに送信され、購入状態の確認のために RevenueCat へ照会されます。この識別子も個人情報とは紐付きません。</p>
+        
+            <h2>7. アフィリエイトリンク・外部サービス</h2>
+            <p>本アプリには、持ち物や宿泊の検索を補助する目的で、Amazon および楽天トラベルへのリンクが含まれます（「PR」表記のあるものはアフィリエイトリンクです）。</p>
+            <ul>
+                  <li>これらのリンクは端末の外部ブラウザ（または各公式アプリ）で開かれ、リンク先での閲覧・購入行動は各サービスのプライバシーポリシーに従います。</li>
+                  <li>リンクを開いたことにより、当方が利用者の購入内容や個人情報を取得することはありません。</li>
+            </ul>
+        
+            <h2>8. 広告</h2>
+            <p>現在、本アプリは第三者の広告配信SDKを使用していません。将来導入する場合は、本ポリシーを改定のうえ、必要な場合には App Tracking Transparency により事前に許可を求めます。</p>
+        
+            <h2>9. 通知</h2>
+            <p>リマインド通知は、利用者の許可に基づき端末上でスケジュールされます（ローカル通知）。通知の内容が外部サーバーに送信されることはありません。通知は iOS の設定からいつでもオフにできます。</p>
+        
+            <h2>10. データの管理・削除</h2>
+            <p>予定データは端末内に保存され、アプリ内の設定画面からJSONファイルとして書き出し・読み込みができます。アプリを削除すると、端末内の予定データは削除されます。中継サーバー上の利用回数カウンタ（匿名UUIDに紐づくもの）は一定期間経過後に自動的に消去されます。</p>
+        
+            <h2>11. 本ポリシーの改定</h2>
+            <p>機能追加等により取り扱いが変わる場合、本ページを更新し、最終更新日を改めます。重要な変更がある場合はアプリ内でお知らせします。</p>
+        
+            <h2>12. お問い合わせ</h2>
+            <p>本ポリシーおよび本アプリに関するお問い合わせは、<a href="https://docs.google.com/forms/d/e/1FAIpQLSf34rsmfMLIVRShFLuhtSoCnUxcrkY1v9LNycJ1CnxykTM5YA/viewform" target="_blank" rel="noopener">お問い合わせフォーム</a>a>よりお願いいたします。</p>
+        
+            <p class="sub">Oshi-Schedule AI 開発者</p>
+        </div>div>
+    </div>div>
+  </body>
+</html>html>
+</p></p></li></li></p></p></li></li></p></p></li></li>
+            </ul></p></p></h1>
+  </body>
+  </style></title>
+  </head>
